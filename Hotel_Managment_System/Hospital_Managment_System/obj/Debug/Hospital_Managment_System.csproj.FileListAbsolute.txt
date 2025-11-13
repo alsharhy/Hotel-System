@@ -1,0 +1,1 @@
+c:\users\bt\documents\visual studio 2013\Projects\Hospital_Managment_System\Hospital_Managment_System\bin\Debug\Hospital_Managment_System.exe.config
