@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -44,11 +45,12 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.labelDataTime = new System.Windows.Forms.Label();
             this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
+            this.labelDataTime = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -71,16 +73,16 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 901);
+            this.panel1.Size = new System.Drawing.Size(400, 749);
             this.panel1.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Location = new System.Drawing.Point(12, 315);
+            this.panel6.Location = new System.Drawing.Point(12, 314);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 58);
+            this.panel6.Size = new System.Drawing.Size(10, 59);
             this.panel6.TabIndex = 6;
             // 
             // buttonSetting
@@ -98,6 +100,7 @@
             this.buttonSetting.TabIndex = 5;
             this.buttonSetting.Text = "Setting";
             this.buttonSetting.UseVisualStyleBackColor = true;
+            this.buttonSetting.Click += new System.EventHandler(this.buttonSetting_Click);
             // 
             // buttonRoom
             // 
@@ -114,6 +117,7 @@
             this.buttonRoom.TabIndex = 3;
             this.buttonRoom.Text = "Room";
             this.buttonRoom.UseVisualStyleBackColor = true;
+            this.buttonRoom.Click += new System.EventHandler(this.buttonRoom_Click);
             // 
             // buttonClient
             // 
@@ -130,6 +134,7 @@
             this.buttonClient.TabIndex = 2;
             this.buttonClient.Text = "Client";
             this.buttonClient.UseVisualStyleBackColor = true;
+            this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
             // buttonReservation
             // 
@@ -146,6 +151,7 @@
             this.buttonReservation.TabIndex = 4;
             this.buttonReservation.Text = "Reservation";
             this.buttonReservation.UseVisualStyleBackColor = true;
+            this.buttonReservation.Click += new System.EventHandler(this.buttonReservation_Click);
             // 
             // buttonDashboard
             // 
@@ -162,6 +168,7 @@
             this.buttonDashboard.TabIndex = 1;
             this.buttonDashboard.Text = "Dashborad";
             this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // panel3
             // 
@@ -181,7 +188,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(126, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 34);
+            this.label3.Size = new System.Drawing.Size(88, 26);
             this.label3.TabIndex = 0;
             this.label3.Text = "System";
             // 
@@ -192,7 +199,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(63, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(258, 34);
+            this.label2.Size = new System.Drawing.Size(206, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hotel Managment";
             // 
@@ -215,7 +222,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(400, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1140, 200);
+            this.panel2.Size = new System.Drawing.Size(970, 200);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -224,9 +231,9 @@
             this.labelUsername.AutoSize = true;
             this.labelUsername.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.White;
-            this.labelUsername.Location = new System.Drawing.Point(169, 142);
+            this.labelUsername.Location = new System.Drawing.Point(142, 142);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(25, 28);
+            this.labelUsername.Size = new System.Drawing.Size(21, 23);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "?";
             // 
@@ -237,21 +244,39 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 28);
+            this.label4.Size = new System.Drawing.Size(103, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Welcome:";
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.labelDataTime);
             this.panel5.Controls.Add(this.linkLabelLogOut);
+            this.panel5.Controls.Add(this.labelDataTime);
             this.panel5.Controls.Add(this.pictureBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1140, 101);
+            this.panel5.Size = new System.Drawing.Size(970, 101);
             this.panel5.TabIndex = 0;
+            // 
+            // linkLabelLogOut
+            // 
+            this.linkLabelLogOut.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.linkLabelLogOut.AutoSize = true;
+            this.linkLabelLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabelLogOut.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.linkLabelLogOut.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabelLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.linkLabelLogOut.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.linkLabelLogOut.Location = new System.Drawing.Point(855, 51);
+            this.linkLabelLogOut.Name = "linkLabelLogOut";
+            this.linkLabelLogOut.Size = new System.Drawing.Size(57, 16);
+            this.linkLabelLogOut.TabIndex = 0;
+            this.linkLabelLogOut.TabStop = true;
+            this.linkLabelLogOut.Text = "Log Out";
+            this.linkLabelLogOut.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.linkLabelLogOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogOut_LinkClicked);
             // 
             // labelDataTime
             // 
@@ -260,34 +285,15 @@
             this.labelDataTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.labelDataTime.Location = new System.Drawing.Point(6, 63);
             this.labelDataTime.Name = "labelDataTime";
-            this.labelDataTime.Size = new System.Drawing.Size(21, 23);
+            this.labelDataTime.Size = new System.Drawing.Size(18, 19);
             this.labelDataTime.TabIndex = 0;
             this.labelDataTime.Text = "?";
-            // 
-            // linkLabelLogOut
-            // 
-            this.linkLabelLogOut.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.linkLabelLogOut.AutoSize = true;
-            this.linkLabelLogOut.BackColor = System.Drawing.Color.White;
-            this.linkLabelLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkLabelLogOut.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.linkLabelLogOut.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelLogOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.linkLabelLogOut.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.linkLabelLogOut.Location = new System.Drawing.Point(999, 63);
-            this.linkLabelLogOut.Name = "linkLabelLogOut";
-            this.linkLabelLogOut.Size = new System.Drawing.Size(71, 19);
-            this.linkLabelLogOut.TabIndex = 0;
-            this.linkLabelLogOut.TabStop = true;
-            this.linkLabelLogOut.Text = "Log Out";
-            this.linkLabelLogOut.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.linkLabelLogOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelLogOut_LinkClicked);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(945, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(775, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 65);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -299,25 +305,30 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(412, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(451, 21);
+            this.label1.Size = new System.Drawing.Size(318, 19);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Copyrght 2025 Rights Resrerved C# MODERN DESIGN";
+            this.label1.Text = "Copyrght 2025 Rights Resrerved C# HACKTOR";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(400, 832);
+            this.panel4.Location = new System.Drawing.Point(400, 680);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1140, 69);
+            this.panel4.Size = new System.Drawing.Size(970, 69);
             this.panel4.TabIndex = 2;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1540, 901);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -327,6 +338,7 @@
             this.Name = "FormDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hotel_Management_System | Dashboard";
+            this.Load += new System.EventHandler(this.FormDashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -350,7 +362,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabelLogOut;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -364,5 +375,7 @@
         private System.Windows.Forms.Button buttonReservation;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.LinkLabel linkLabelLogOut;
     }
 }
