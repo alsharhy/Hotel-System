@@ -8,24 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Hospital_Managment_System
 {
     public partial class FormLogin : Form
     {
+        DbConnector db;
         public FormLogin()
         {
             InitializeComponent();
+            db = new DbConnector();
         }
 
         private void pictureBoxMinimize_MouseHover(object sender, EventArgs e)
         {
-            
-        }
-
-        private void pictureBoxclose_MouseHover(object sender, EventArgs e)
-        {
 
         }
+
 
         private void pictureBoxclose_Click(object sender, EventArgs e)
         {
@@ -42,11 +41,23 @@ namespace Hospital_Managment_System
 
         }
 
+
+        //Show Password
         private void pictureBoxShow_MouseHover(object sender, EventArgs e)
+        {
+
+            // toolTip.SetToolTip((pictureBoxShow,"Show Password");
+
+        }
+
+        //Hide Password
+        private void pictureBoxclose_MouseHover(object sender, EventArgs e)
         {
 
         }
 
+
+        //Done
         private void pictureBoxShow_Click(object sender, EventArgs e)
         {
             pictureBoxShow.Hide();
@@ -54,6 +65,8 @@ namespace Hospital_Managment_System
             pictureBoxHide.Show();
         }
 
+
+        //Done
         private void pictureBoxHide_Click(object sender, EventArgs e)
         {
             pictureBoxHide.Hide();
@@ -68,9 +81,31 @@ namespace Hospital_Managment_System
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            FormDashboard lo = new FormDashboard();
-            lo.Show();
-           
+            bool Check = db.IsValidNamePass(textBoxUsername.Text.Trim(), textBoxPassword.Text.Trim());
+            if (textBoxUsername.Text.Trim() == string.Empty || textBoxPassword.Text.Trim() == string.Empty)
+            {
+                MessageBox.Show("Please Fill Out All Field.", "Required", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+
+                if (Check)
+                {
+                    FormDashboard fd = new FormDashboard();
+                      fd.Username = textBoxUsername.Text;
+                      textBoxUsername.Clear();
+                      textBoxPassword.Clear();
+                    fd.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid UserNmae OR Password.", "UserNmae OR Password", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
         }
+
+
     }
 }
