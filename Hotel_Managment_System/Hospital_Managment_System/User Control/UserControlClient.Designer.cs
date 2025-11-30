@@ -30,27 +30,28 @@
         {
             this.tabControlClient = new System.Windows.Forms.TabControl();
             this.tabPageAddClient = new System.Windows.Forms.TabPage();
-            this.tabPageSearchClient = new System.Windows.Forms.TabPage();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxPhoneNo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxPhoneNo = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxAddress = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tabPageUdateandDeleteClient = new System.Windows.Forms.TabPage();
+            this.tabPageSearchClient = new System.Windows.Forms.TabPage();
             this.dataGridViewClient = new System.Windows.Forms.DataGridView();
-            this.textBoxSearchphoneNo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxSearchphoneNo = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tabPageUdateandDeleteClient = new System.Windows.Forms.TabPage();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.textBoxAddress1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxPhoneNo1 = new System.Windows.Forms.TextBox();
@@ -61,12 +62,11 @@
             this.textBoxFirstName1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.buttonDelete = new System.Windows.Forms.Button();
             this.tabControlClient.SuspendLayout();
             this.tabPageAddClient.SuspendLayout();
             this.tabPageSearchClient.SuspendLayout();
-            this.tabPageUdateandDeleteClient.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).BeginInit();
+            this.tabPageUdateandDeleteClient.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlClient
@@ -81,6 +81,8 @@
             this.tabControlClient.SelectedIndex = 0;
             this.tabControlClient.Size = new System.Drawing.Size(1105, 521);
             this.tabControlClient.TabIndex = 0;
+            this.tabControlClient.Enter += new System.EventHandler(this.tabPageSearchClient_Enter);
+            this.tabControlClient.Leave += new System.EventHandler(this.tablSearchClient_Leave);
             // 
             // tabPageAddClient
             // 
@@ -102,19 +104,46 @@
             this.tabPageAddClient.Text = "Add Client";
             this.tabPageAddClient.UseVisualStyleBackColor = true;
             // 
-            // tabPageSearchClient
+            // textBoxAddress
             // 
-            this.tabPageSearchClient.Controls.Add(this.dataGridViewClient);
-            this.tabPageSearchClient.Controls.Add(this.textBoxSearchphoneNo);
-            this.tabPageSearchClient.Controls.Add(this.label6);
-            this.tabPageSearchClient.Controls.Add(this.label7);
-            this.tabPageSearchClient.Location = new System.Drawing.Point(4, 4);
-            this.tabPageSearchClient.Name = "tabPageSearchClient";
-            this.tabPageSearchClient.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchClient.Size = new System.Drawing.Size(1097, 487);
-            this.tabPageSearchClient.TabIndex = 1;
-            this.tabPageSearchClient.Text = "Search Client";
-            this.tabPageSearchClient.UseVisualStyleBackColor = true;
+            this.textBoxAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxAddress.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAddress.Location = new System.Drawing.Point(240, 288);
+            this.textBoxAddress.Multiline = true;
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(595, 76);
+            this.textBoxAddress.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(236, 262);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 22);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Address:";
+            // 
+            // textBoxPhoneNo
+            // 
+            this.textBoxPhoneNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxPhoneNo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPhoneNo.Location = new System.Drawing.Point(240, 222);
+            this.textBoxPhoneNo.Name = "textBoxPhoneNo";
+            this.textBoxPhoneNo.Size = new System.Drawing.Size(259, 30);
+            this.textBoxPhoneNo.TabIndex = 13;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(236, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 22);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Phone No:";
             // 
             // buttonAdd
             // 
@@ -130,6 +159,8 @@
             this.buttonAdd.TabIndex = 11;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonAdd.Leave += new System.EventHandler(this.buttonAdd_Leave);
             // 
             // textBoxLastName
             // 
@@ -147,7 +178,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(572, 86);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 23);
+            this.label3.Size = new System.Drawing.Size(107, 22);
             this.label3.TabIndex = 9;
             this.label3.Text = "Last Name:";
             // 
@@ -167,7 +198,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(236, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.Size = new System.Drawing.Size(106, 22);
             this.label2.TabIndex = 7;
             this.label2.Text = "First Name:";
             // 
@@ -179,50 +210,118 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label1.Location = new System.Drawing.Point(40, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 23);
+            this.label1.Size = new System.Drawing.Size(107, 22);
             this.label1.TabIndex = 6;
             this.label1.Text = "Add Client:";
             // 
-            // textBoxPhoneNo
+            // tabPageSearchClient
             // 
-            this.textBoxPhoneNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxPhoneNo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPhoneNo.Location = new System.Drawing.Point(240, 222);
-            this.textBoxPhoneNo.Name = "textBoxPhoneNo";
-            this.textBoxPhoneNo.Size = new System.Drawing.Size(259, 30);
-            this.textBoxPhoneNo.TabIndex = 13;
+            this.tabPageSearchClient.Controls.Add(this.dataGridViewClient);
+            this.tabPageSearchClient.Controls.Add(this.textBoxSearchphoneNo);
+            this.tabPageSearchClient.Controls.Add(this.label6);
+            this.tabPageSearchClient.Controls.Add(this.label7);
+            this.tabPageSearchClient.Location = new System.Drawing.Point(4, 4);
+            this.tabPageSearchClient.Name = "tabPageSearchClient";
+            this.tabPageSearchClient.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSearchClient.Size = new System.Drawing.Size(1097, 487);
+            this.tabPageSearchClient.TabIndex = 1;
+            this.tabPageSearchClient.Text = "Search Client";
+            this.tabPageSearchClient.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // dataGridViewClient
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(236, 180);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 23);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Phone No:";
+            this.dataGridViewClient.AllowUserToAddRows = false;
+            this.dataGridViewClient.AllowUserToDeleteRows = false;
+            this.dataGridViewClient.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataGridViewClient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dataGridViewClient.Location = new System.Drawing.Point(42, 146);
+            this.dataGridViewClient.Name = "dataGridViewClient";
+            this.dataGridViewClient.ReadOnly = true;
+            this.dataGridViewClient.RowHeadersWidth = 51;
+            this.dataGridViewClient.RowTemplate.Height = 26;
+            this.dataGridViewClient.Size = new System.Drawing.Size(1014, 321);
+            this.dataGridViewClient.TabIndex = 9;
             // 
-            // textBoxAddress
+            // Column1
             // 
-            this.textBoxAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxAddress.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(240, 288);
-            this.textBoxAddress.Multiline = true;
-            this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(595, 76);
-            this.textBoxAddress.TabIndex = 15;
+            this.Column1.DataPropertyName = "Client_ID";
+            this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
-            // label5
+            // Column2
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(236, 262);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 23);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Address:";
+            this.Column2.DataPropertyName = "Clinent_FirstName";
+            this.Column2.HeaderText = "First Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Client_LastName";
+            this.Column3.HeaderText = "Last Name";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Client_Name";
+            this.Column4.HeaderText = "Phone No.";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Client_Address";
+            this.Column5.HeaderText = "Address";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // textBoxSearchphoneNo
+            // 
+            this.textBoxSearchphoneNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxSearchphoneNo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchphoneNo.Location = new System.Drawing.Point(253, 83);
+            this.textBoxSearchphoneNo.Name = "textBoxSearchphoneNo";
+            this.textBoxSearchphoneNo.Size = new System.Drawing.Size(259, 30);
+            this.textBoxSearchphoneNo.TabIndex = 8;
+            this.textBoxSearchphoneNo.TextChanged += new System.EventHandler(this.textBoxSearchphoneNo_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(249, 41);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 22);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Phone No.";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.label7.Location = new System.Drawing.Point(6, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(131, 22);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "search Client:";
             // 
             // tabPageUdateandDeleteClient
             // 
@@ -245,93 +344,22 @@
             this.tabPageUdateandDeleteClient.Text = "Udate and Delete Client";
             this.tabPageUdateandDeleteClient.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewClient
+            // buttonDelete
             // 
-            this.dataGridViewClient.AllowUserToAddRows = false;
-            this.dataGridViewClient.AllowUserToDeleteRows = false;
-            this.dataGridViewClient.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridViewClient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewClient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.dataGridViewClient.Location = new System.Drawing.Point(42, 146);
-            this.dataGridViewClient.Name = "dataGridViewClient";
-            this.dataGridViewClient.ReadOnly = true;
-            this.dataGridViewClient.RowTemplate.Height = 26;
-            this.dataGridViewClient.Size = new System.Drawing.Size(1014, 321);
-            this.dataGridViewClient.TabIndex = 9;
-            // 
-            // textBoxSearchphoneNo
-            // 
-            this.textBoxSearchphoneNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxSearchphoneNo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchphoneNo.Location = new System.Drawing.Point(253, 83);
-            this.textBoxSearchphoneNo.Name = "textBoxSearchphoneNo";
-            this.textBoxSearchphoneNo.Size = new System.Drawing.Size(259, 30);
-            this.textBoxSearchphoneNo.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(249, 41);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 23);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Phone No.";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label7.Location = new System.Drawing.Point(6, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 23);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "search Client:";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Client_ID";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "Clinent_FirstName";
-            this.Column2.HeaderText = "First Name";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Client_LastName";
-            this.Column3.HeaderText = "Last Name";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Client_Name";
-            this.Column4.HeaderText = "Phone No.";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Client_Address";
-            this.Column5.HeaderText = "Address";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDelete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonDelete.Location = new System.Drawing.Point(418, 359);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(167, 60);
+            this.buttonDelete.TabIndex = 26;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.buttonDelete.Leave += new System.EventHandler(this.tabPageUpdateAndDeleteClient_Leave);
             // 
             // textBoxAddress1
             // 
@@ -350,7 +378,7 @@
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(210, 242);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 23);
+            this.label8.Size = new System.Drawing.Size(86, 22);
             this.label8.TabIndex = 24;
             this.label8.Text = "Address:";
             // 
@@ -370,7 +398,7 @@
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(210, 160);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 23);
+            this.label9.Size = new System.Drawing.Size(101, 22);
             this.label9.TabIndex = 22;
             this.label9.Text = "Phone No:";
             // 
@@ -388,6 +416,7 @@
             this.buttonUpdate.TabIndex = 21;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // textBoxLastname1
             // 
@@ -405,7 +434,7 @@
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(546, 66);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 23);
+            this.label10.Size = new System.Drawing.Size(107, 22);
             this.label10.TabIndex = 19;
             this.label10.Text = "Last Name:";
             // 
@@ -425,7 +454,7 @@
             this.label11.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(210, 66);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(111, 23);
+            this.label11.Size = new System.Drawing.Size(106, 22);
             this.label11.TabIndex = 17;
             this.label11.Text = "First Name:";
             // 
@@ -437,24 +466,9 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label12.Location = new System.Drawing.Point(14, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(223, 23);
+            this.label12.Size = new System.Drawing.Size(212, 22);
             this.label12.TabIndex = 16;
             this.label12.Text = "Udate Or Delete Client:";
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
-            this.buttonDelete.FlatAppearance.BorderSize = 0;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(418, 359);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(167, 60);
-            this.buttonDelete.TabIndex = 26;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
             // 
             // UserControlClient
             // 
@@ -463,7 +477,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabControlClient);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserControlClient";
             this.Size = new System.Drawing.Size(1208, 684);
             this.tabControlClient.ResumeLayout(false);
@@ -471,9 +485,9 @@
             this.tabPageAddClient.PerformLayout();
             this.tabPageSearchClient.ResumeLayout(false);
             this.tabPageSearchClient.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).EndInit();
             this.tabPageUdateandDeleteClient.ResumeLayout(false);
             this.tabPageUdateandDeleteClient.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).EndInit();
             this.ResumeLayout(false);
 
         }

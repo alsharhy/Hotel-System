@@ -20,7 +20,7 @@ namespace Hospital_Managment_System.User_Control
        
 
      
-
+         
        
     }
 }

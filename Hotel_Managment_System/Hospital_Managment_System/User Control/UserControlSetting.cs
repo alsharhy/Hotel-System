@@ -17,6 +17,14 @@ namespace Hospital_Managment_System.User_Control
             InitializeComponent();
         }
 
-    
+        private void tabPageAddUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

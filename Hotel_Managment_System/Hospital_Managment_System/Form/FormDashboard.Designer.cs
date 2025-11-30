@@ -51,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -188,7 +189,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(126, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 26);
+            this.label3.Size = new System.Drawing.Size(110, 34);
             this.label3.TabIndex = 0;
             this.label3.Text = "System";
             // 
@@ -199,7 +200,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(63, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(206, 26);
+            this.label2.Size = new System.Drawing.Size(258, 34);
             this.label2.TabIndex = 0;
             this.label2.Text = "Hotel Managment";
             // 
@@ -233,7 +234,7 @@
             this.labelUsername.ForeColor = System.Drawing.Color.White;
             this.labelUsername.Location = new System.Drawing.Point(142, 142);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(21, 23);
+            this.labelUsername.Size = new System.Drawing.Size(25, 27);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "?";
             // 
@@ -244,7 +245,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(33, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 23);
+            this.label4.Size = new System.Drawing.Size(127, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "Welcome:";
             // 
@@ -271,7 +272,7 @@
             this.linkLabelLogOut.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.linkLabelLogOut.Location = new System.Drawing.Point(855, 51);
             this.linkLabelLogOut.Name = "linkLabelLogOut";
-            this.linkLabelLogOut.Size = new System.Drawing.Size(57, 16);
+            this.linkLabelLogOut.Size = new System.Drawing.Size(71, 19);
             this.linkLabelLogOut.TabIndex = 0;
             this.linkLabelLogOut.TabStop = true;
             this.linkLabelLogOut.Text = "Log Out";
@@ -285,7 +286,7 @@
             this.labelDataTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.labelDataTime.Location = new System.Drawing.Point(6, 63);
             this.labelDataTime.Name = "labelDataTime";
-            this.labelDataTime.Size = new System.Drawing.Size(18, 19);
+            this.labelDataTime.Size = new System.Drawing.Size(21, 23);
             this.labelDataTime.TabIndex = 0;
             this.labelDataTime.Text = "?";
             // 
@@ -305,7 +306,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(412, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 19);
+            this.label1.Size = new System.Drawing.Size(388, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Copyrght 2025 Rights Resrerved C# HACKTOR";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -325,7 +326,7 @@
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 749);
@@ -377,5 +378,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.LinkLabel linkLabelLogOut;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

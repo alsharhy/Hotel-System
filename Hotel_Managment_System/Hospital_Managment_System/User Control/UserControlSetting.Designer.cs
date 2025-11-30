@@ -88,6 +88,7 @@
             this.tabPageAddUser.TabIndex = 0;
             this.tabPageAddUser.Text = "Add User";
             this.tabPageAddUser.UseVisualStyleBackColor = true;
+            this.tabPageAddUser.Click += new System.EventHandler(this.tabPageAddUser_Click);
             // 
             // buttonAdd
             // 
@@ -120,7 +121,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(588, 164);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 23);
+            this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password:";
             // 
@@ -140,7 +141,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(252, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 23);
+            this.label2.Size = new System.Drawing.Size(105, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
@@ -152,7 +153,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label1.Location = new System.Drawing.Point(6, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.Size = new System.Drawing.Size(95, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add User:";
             // 
@@ -185,6 +186,7 @@
             this.dataGridViewUser.Location = new System.Drawing.Point(30, 140);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.ReadOnly = true;
+            this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 26;
             this.dataGridViewUser.Size = new System.Drawing.Size(1014, 321);
             this.dataGridViewUser.TabIndex = 5;
@@ -193,6 +195,7 @@
             // 
             this.Column1.DataPropertyName = "User_ID";
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
@@ -200,6 +203,7 @@
             // 
             this.Column2.DataPropertyName = "User_Name";
             this.Column2.HeaderText = "Username";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -207,6 +211,7 @@
             // 
             this.Column3.DataPropertyName = "User_Password";
             this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -226,7 +231,7 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(205, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 23);
+            this.label5.Size = new System.Drawing.Size(105, 22);
             this.label5.TabIndex = 3;
             this.label5.Text = "Username:";
             // 
@@ -238,7 +243,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label4.Location = new System.Drawing.Point(-1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 23);
+            this.label4.Size = new System.Drawing.Size(119, 22);
             this.label4.TabIndex = 0;
             this.label4.Text = "search User:";
             // 
@@ -273,6 +278,7 @@
             this.buttonDelete.TabIndex = 12;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
@@ -305,7 +311,7 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(579, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 23);
+            this.label6.Size = new System.Drawing.Size(97, 22);
             this.label6.TabIndex = 9;
             this.label6.Text = "Password:";
             // 
@@ -325,7 +331,7 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(233, 130);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 23);
+            this.label7.Size = new System.Drawing.Size(105, 22);
             this.label7.TabIndex = 7;
             this.label7.Text = "Username:";
             // 
@@ -337,7 +343,7 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label8.Location = new System.Drawing.Point(19, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(217, 23);
+            this.label8.Size = new System.Drawing.Size(209, 22);
             this.label8.TabIndex = 6;
             this.label8.Text = "Update or Delete User:";
             // 
