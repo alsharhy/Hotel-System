@@ -90,6 +90,7 @@
             this.tabPageAddUser.TabIndex = 0;
             this.tabPageAddUser.Text = "Add User";
             this.tabPageAddUser.UseVisualStyleBackColor = true;
+            this.tabPageAddUser.Click += new System.EventHandler(this.tabPageAddUser_Click);
             // 
             // buttonAdd
             // 
@@ -191,6 +192,7 @@
             this.dataGridViewUser.Location = new System.Drawing.Point(30, 140);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.ReadOnly = true;
+            this.dataGridViewUser.RowHeadersWidth = 51;
             this.dataGridViewUser.RowTemplate.Height = 26;
             this.dataGridViewUser.Size = new System.Drawing.Size(1014, 321);
             this.dataGridViewUser.TabIndex = 5;
@@ -200,6 +202,7 @@
             // 
             this.Column1.DataPropertyName = "User_ID";
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             // 
@@ -207,6 +210,7 @@
             // 
             this.Column2.DataPropertyName = "User_Name";
             this.Column2.HeaderText = "Username";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -214,6 +218,7 @@
             // 
             this.Column3.DataPropertyName = "User_Password";
             this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 

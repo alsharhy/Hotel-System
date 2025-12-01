@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hospital_Managment_System.User_Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
