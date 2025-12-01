@@ -51,6 +51,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlClient1 = new Hospital_Managment_System.User_Control.UserControlClient();
+            this.userControlSetting1 = new Hospital_Managment_System.User_Control.UserControlSetting();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -323,12 +325,36 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // userControlClient1
+            // 
+            this.userControlClient1.BackColor = System.Drawing.Color.White;
+            this.userControlClient1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlClient1.Location = new System.Drawing.Point(400, 200);
+            this.userControlClient1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlClient1.Name = "userControlClient1";
+            this.userControlClient1.Size = new System.Drawing.Size(1208, 684);
+            this.userControlClient1.TabIndex = 0;
+            this.userControlClient1.Visible = false;
+            // 
+            // userControlSetting1
+            // 
+            this.userControlSetting1.BackColor = System.Drawing.Color.White;
+            this.userControlSetting1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlSetting1.Location = new System.Drawing.Point(404, 200);
+            this.userControlSetting1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlSetting1.Name = "userControlSetting1";
+            this.userControlSetting1.Size = new System.Drawing.Size(1180, 615);
+            this.userControlSetting1.TabIndex = 3;
+            this.userControlSetting1.Visible = false;
+            // 
             // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.userControlClient1);
+            this.Controls.Add(this.userControlSetting1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -377,5 +403,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.LinkLabel linkLabelLogOut;
+        private User_Control.UserControlSetting userControlSetting1;
+        private User_Control.UserControlClient userControlClient1;
     }
 }

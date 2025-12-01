@@ -53,27 +53,38 @@ namespace Hospital_Managment_System
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MovePanel(buttonDashboard);
+            userControlSetting1.Hide();
+            userControlClient1.Hide();
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
             MovePanel(buttonClient);
+            userControlSetting1.Hide();
+            userControlClient1.Clear();
+            userControlClient1.Show();
 
         }
 
         private void buttonRoom_Click(object sender, EventArgs e)
         {
             MovePanel(buttonRoom);
+            userControlSetting1.Hide();
+            userControlClient1.Hide();
         }
 
         private void buttonReservation_Click(object sender, EventArgs e)
         {
             MovePanel(buttonReservation);
+            userControlSetting1.Hide();
+            userControlClient1.Hide();
         }
 
         private void buttonSetting_Click(object sender, EventArgs e)
         {
             MovePanel(buttonSetting);
+            userControlSetting1.Clear();
+            userControlSetting1.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

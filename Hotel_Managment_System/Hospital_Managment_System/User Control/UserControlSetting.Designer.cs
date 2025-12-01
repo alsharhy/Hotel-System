@@ -44,7 +44,7 @@
             this.textBoxSearchUsername = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabPageUpdateandDeleteUser = new System.Windows.Forms.TabPage();
+            this.tabPageUpdateAndDeleteUser = new System.Windows.Forms.TabPage();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.textBoxPassword1 = new System.Windows.Forms.TextBox();
@@ -56,7 +56,7 @@
             this.tabPageAddUser.SuspendLayout();
             this.tabPageSearchUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
-            this.tabPageUpdateandDeleteUser.SuspendLayout();
+            this.tabPageUpdateAndDeleteUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlUser
@@ -65,13 +65,15 @@
             this.tabControlUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tabControlUser.Controls.Add(this.tabPageAddUser);
             this.tabControlUser.Controls.Add(this.tabPageSearchUser);
-            this.tabControlUser.Controls.Add(this.tabPageUpdateandDeleteUser);
+            this.tabControlUser.Controls.Add(this.tabPageUpdateAndDeleteUser);
             this.tabControlUser.Location = new System.Drawing.Point(16, 17);
             this.tabControlUser.Name = "tabControlUser";
             this.tabControlUser.RightToLeftLayout = true;
             this.tabControlUser.SelectedIndex = 0;
             this.tabControlUser.Size = new System.Drawing.Size(1127, 526);
             this.tabControlUser.TabIndex = 0;
+            this.tabControlUser.Enter += new System.EventHandler(this.tabPageSearchUser_Enter);
+            this.tabControlUser.Leave += new System.EventHandler(this.tabPageAddUser_Leave);
             // 
             // tabPageAddUser
             // 
@@ -84,7 +86,7 @@
             this.tabPageAddUser.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddUser.Name = "tabPageAddUser";
             this.tabPageAddUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddUser.Size = new System.Drawing.Size(1119, 492);
+            this.tabPageAddUser.Size = new System.Drawing.Size(1119, 494);
             this.tabPageAddUser.TabIndex = 0;
             this.tabPageAddUser.Text = "Add User";
             this.tabPageAddUser.UseVisualStyleBackColor = true;
@@ -93,16 +95,18 @@
             // 
             this.buttonAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(256, 270);
+            this.buttonAdd.Location = new System.Drawing.Point(255, 260);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(167, 60);
+            this.buttonAdd.Size = new System.Drawing.Size(142, 30);
             this.buttonAdd.TabIndex = 5;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // textBoxPassword
             // 
@@ -110,7 +114,7 @@
             this.textBoxPassword.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(592, 210);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(259, 30);
+            this.textBoxPassword.Size = new System.Drawing.Size(259, 25);
             this.textBoxPassword.TabIndex = 4;
             // 
             // label3
@@ -120,7 +124,7 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(588, 164);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 23);
+            this.label3.Size = new System.Drawing.Size(79, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Password:";
             // 
@@ -130,7 +134,7 @@
             this.textBoxUsername.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(256, 210);
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(259, 30);
+            this.textBoxUsername.Size = new System.Drawing.Size(259, 25);
             this.textBoxUsername.TabIndex = 2;
             // 
             // label2
@@ -140,7 +144,7 @@
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(252, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 23);
+            this.label2.Size = new System.Drawing.Size(86, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
             // 
@@ -152,7 +156,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label1.Location = new System.Drawing.Point(6, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.Size = new System.Drawing.Size(78, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add User:";
             // 
@@ -165,10 +169,12 @@
             this.tabPageSearchUser.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchUser.Name = "tabPageSearchUser";
             this.tabPageSearchUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchUser.Size = new System.Drawing.Size(1119, 492);
+            this.tabPageSearchUser.Size = new System.Drawing.Size(1119, 494);
             this.tabPageSearchUser.TabIndex = 1;
             this.tabPageSearchUser.Text = "Search User:";
             this.tabPageSearchUser.UseVisualStyleBackColor = true;
+            this.tabPageSearchUser.Enter += new System.EventHandler(this.tabPageSearchUser_Enter);
+            this.tabPageSearchUser.Layout += new System.Windows.Forms.LayoutEventHandler(this.tabPageSearchUser_Layout);
             // 
             // dataGridViewUser
             // 
@@ -188,6 +194,7 @@
             this.dataGridViewUser.RowTemplate.Height = 26;
             this.dataGridViewUser.Size = new System.Drawing.Size(1014, 321);
             this.dataGridViewUser.TabIndex = 5;
+            this.dataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUser_CellClick);
             // 
             // Column1
             // 
@@ -216,8 +223,9 @@
             this.textBoxSearchUsername.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearchUsername.Location = new System.Drawing.Point(209, 80);
             this.textBoxSearchUsername.Name = "textBoxSearchUsername";
-            this.textBoxSearchUsername.Size = new System.Drawing.Size(259, 30);
+            this.textBoxSearchUsername.Size = new System.Drawing.Size(259, 25);
             this.textBoxSearchUsername.TabIndex = 4;
+            this.textBoxSearchUsername.TextChanged += new System.EventHandler(this.textBoxSearchUsername_TextChanged);
             // 
             // label5
             // 
@@ -226,7 +234,7 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(205, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 23);
+            this.label5.Size = new System.Drawing.Size(86, 18);
             this.label5.TabIndex = 3;
             this.label5.Text = "Username:";
             // 
@@ -236,58 +244,63 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label4.Location = new System.Drawing.Point(-1, 0);
+            this.label4.Location = new System.Drawing.Point(6, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 23);
+            this.label4.Size = new System.Drawing.Size(97, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "search User:";
             // 
-            // tabPageUpdateandDeleteUser
+            // tabPageUpdateAndDeleteUser
             // 
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.buttonDelete);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.buttonUpdate);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.textBoxPassword1);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.label6);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.textBoxUsername1);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.label7);
-            this.tabPageUpdateandDeleteUser.Controls.Add(this.label8);
-            this.tabPageUpdateandDeleteUser.Location = new System.Drawing.Point(4, 4);
-            this.tabPageUpdateandDeleteUser.Name = "tabPageUpdateandDeleteUser";
-            this.tabPageUpdateandDeleteUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUpdateandDeleteUser.Size = new System.Drawing.Size(1119, 492);
-            this.tabPageUpdateandDeleteUser.TabIndex = 2;
-            this.tabPageUpdateandDeleteUser.Text = "Update and Delete User";
-            this.tabPageUpdateandDeleteUser.UseVisualStyleBackColor = true;
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.buttonDelete);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.buttonUpdate);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.textBoxPassword1);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.label6);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.textBoxUsername1);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.label7);
+            this.tabPageUpdateAndDeleteUser.Controls.Add(this.label8);
+            this.tabPageUpdateAndDeleteUser.Location = new System.Drawing.Point(4, 4);
+            this.tabPageUpdateAndDeleteUser.Name = "tabPageUpdateAndDeleteUser";
+            this.tabPageUpdateAndDeleteUser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageUpdateAndDeleteUser.Size = new System.Drawing.Size(1119, 494);
+            this.tabPageUpdateAndDeleteUser.TabIndex = 2;
+            this.tabPageUpdateAndDeleteUser.Text = "Update and Delete User";
+            this.tabPageUpdateAndDeleteUser.UseVisualStyleBackColor = true;
+            this.tabPageUpdateAndDeleteUser.Leave += new System.EventHandler(this.tabPageUpdateAndDeleteUser_Leave);
             // 
             // buttonDelete
             // 
             this.buttonDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(73)))), ((int)(((byte)(73)))));
+            this.buttonDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
             this.buttonDelete.Location = new System.Drawing.Point(419, 246);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(167, 60);
+            this.buttonDelete.Size = new System.Drawing.Size(137, 29);
             this.buttonDelete.TabIndex = 12;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonUpdate
             // 
             this.buttonUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.buttonUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonUpdate.FlatAppearance.BorderSize = 0;
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUpdate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
             this.buttonUpdate.Location = new System.Drawing.Point(228, 246);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(167, 60);
+            this.buttonUpdate.Size = new System.Drawing.Size(131, 29);
             this.buttonUpdate.TabIndex = 11;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
             // 
             // textBoxPassword1
             // 
@@ -295,7 +308,7 @@
             this.textBoxPassword1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword1.Location = new System.Drawing.Point(583, 180);
             this.textBoxPassword1.Name = "textBoxPassword1";
-            this.textBoxPassword1.Size = new System.Drawing.Size(259, 30);
+            this.textBoxPassword1.Size = new System.Drawing.Size(259, 25);
             this.textBoxPassword1.TabIndex = 10;
             // 
             // label6
@@ -305,7 +318,7 @@
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(579, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 23);
+            this.label6.Size = new System.Drawing.Size(79, 18);
             this.label6.TabIndex = 9;
             this.label6.Text = "Password:";
             // 
@@ -315,7 +328,7 @@
             this.textBoxUsername1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername1.Location = new System.Drawing.Point(237, 180);
             this.textBoxUsername1.Name = "textBoxUsername1";
-            this.textBoxUsername1.Size = new System.Drawing.Size(259, 30);
+            this.textBoxUsername1.Size = new System.Drawing.Size(259, 25);
             this.textBoxUsername1.TabIndex = 8;
             // 
             // label7
@@ -325,7 +338,7 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(233, 130);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 23);
+            this.label7.Size = new System.Drawing.Size(86, 18);
             this.label7.TabIndex = 7;
             this.label7.Text = "Username:";
             // 
@@ -337,13 +350,13 @@
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label8.Location = new System.Drawing.Point(19, 19);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(217, 23);
+            this.label8.Size = new System.Drawing.Size(173, 18);
             this.label8.TabIndex = 6;
             this.label8.Text = "Update or Delete User:";
             // 
             // UserControlSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabControlUser);
@@ -357,8 +370,8 @@
             this.tabPageSearchUser.ResumeLayout(false);
             this.tabPageSearchUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
-            this.tabPageUpdateandDeleteUser.ResumeLayout(false);
-            this.tabPageUpdateandDeleteUser.PerformLayout();
+            this.tabPageUpdateAndDeleteUser.ResumeLayout(false);
+            this.tabPageUpdateAndDeleteUser.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -381,7 +394,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.TextBox textBoxSearchUsername;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TabPage tabPageUpdateandDeleteUser;
+        private System.Windows.Forms.TabPage tabPageUpdateAndDeleteUser;
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.TextBox textBoxPassword1;
