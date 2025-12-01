@@ -76,10 +76,10 @@
             this.tabControlClient.Controls.Add(this.tabPageAddClient);
             this.tabControlClient.Controls.Add(this.tabPageSearchClient);
             this.tabControlClient.Controls.Add(this.tabPageUdateandDeleteClient);
-            this.tabControlClient.Location = new System.Drawing.Point(49, 68);
+            this.tabControlClient.Location = new System.Drawing.Point(30, 34);
             this.tabControlClient.Name = "tabControlClient";
             this.tabControlClient.SelectedIndex = 0;
-            this.tabControlClient.Size = new System.Drawing.Size(1105, 521);
+            this.tabControlClient.Size = new System.Drawing.Size(1071, 469);
             this.tabControlClient.TabIndex = 0;
             this.tabControlClient.Enter += new System.EventHandler(this.tabPageSearchClient_Enter);
             this.tabControlClient.Leave += new System.EventHandler(this.tablSearchClient_Leave);
@@ -99,10 +99,11 @@
             this.tabPageAddClient.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddClient.Name = "tabPageAddClient";
             this.tabPageAddClient.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddClient.Size = new System.Drawing.Size(1097, 487);
+            this.tabPageAddClient.Size = new System.Drawing.Size(1063, 437);
             this.tabPageAddClient.TabIndex = 0;
             this.tabPageAddClient.Text = "Add Client";
             this.tabPageAddClient.UseVisualStyleBackColor = true;
+            this.tabPageAddClient.Leave += new System.EventHandler(this.tabPageAddClient_Leave);
             // 
             // textBoxAddress
             // 
@@ -153,9 +154,9 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(240, 379);
+            this.buttonAdd.Location = new System.Drawing.Point(223, 353);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(167, 60);
+            this.buttonAdd.Size = new System.Drawing.Size(137, 32);
             this.buttonAdd.TabIndex = 11;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
@@ -166,9 +167,9 @@
             // 
             this.textBoxLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxLastName.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLastName.Location = new System.Drawing.Point(576, 132);
+            this.textBoxLastName.Location = new System.Drawing.Point(559, 106);
             this.textBoxLastName.Name = "textBoxLastName";
-            this.textBoxLastName.Size = new System.Drawing.Size(259, 30);
+            this.textBoxLastName.Size = new System.Drawing.Size(259, 25);
             this.textBoxLastName.TabIndex = 10;
             // 
             // label3
@@ -176,7 +177,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(572, 86);
+            this.label3.Location = new System.Drawing.Point(555, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 22);
             this.label3.TabIndex = 9;
@@ -186,9 +187,9 @@
             // 
             this.textBoxFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxFirstName.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(240, 132);
+            this.textBoxFirstName.Location = new System.Drawing.Point(223, 106);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(259, 30);
+            this.textBoxFirstName.Size = new System.Drawing.Size(259, 25);
             this.textBoxFirstName.TabIndex = 8;
             // 
             // label2
@@ -196,7 +197,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(236, 86);
+            this.label2.Location = new System.Drawing.Point(219, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 22);
             this.label2.TabIndex = 7;
@@ -208,7 +209,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label1.Location = new System.Drawing.Point(40, 30);
+            this.label1.Location = new System.Drawing.Point(23, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 22);
             this.label1.TabIndex = 6;
@@ -388,7 +389,7 @@
             this.textBoxPhoneNo1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPhoneNo1.Location = new System.Drawing.Point(214, 202);
             this.textBoxPhoneNo1.Name = "textBoxPhoneNo1";
-            this.textBoxPhoneNo1.Size = new System.Drawing.Size(259, 30);
+            this.textBoxPhoneNo1.Size = new System.Drawing.Size(259, 25);
             this.textBoxPhoneNo1.TabIndex = 23;
             // 
             // label9
@@ -412,7 +413,7 @@
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
             this.buttonUpdate.Location = new System.Drawing.Point(214, 359);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(167, 60);
+            this.buttonUpdate.Size = new System.Drawing.Size(130, 28);
             this.buttonUpdate.TabIndex = 21;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
@@ -424,7 +425,7 @@
             this.textBoxLastname1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxLastname1.Location = new System.Drawing.Point(550, 112);
             this.textBoxLastname1.Name = "textBoxLastname1";
-            this.textBoxLastname1.Size = new System.Drawing.Size(259, 30);
+            this.textBoxLastname1.Size = new System.Drawing.Size(259, 25);
             this.textBoxLastname1.TabIndex = 20;
             // 
             // label10
@@ -444,7 +445,7 @@
             this.textBoxFirstName1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFirstName1.Location = new System.Drawing.Point(214, 112);
             this.textBoxFirstName1.Name = "textBoxFirstName1";
-            this.textBoxFirstName1.Size = new System.Drawing.Size(259, 30);
+            this.textBoxFirstName1.Size = new System.Drawing.Size(259, 25);
             this.textBoxFirstName1.TabIndex = 18;
             // 
             // label11
@@ -472,7 +473,7 @@
             // 
             // UserControlClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.tabControlClient);
