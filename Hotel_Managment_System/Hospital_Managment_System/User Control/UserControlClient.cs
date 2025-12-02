@@ -245,37 +245,6 @@ namespace Hospital_Managment_System.User_Control
 
 
 
-        private void buttonDelete_Click(object sender, EventArgs e)
-        {
-            bool check;
-            if (ID != "")
-            {
-
-                if (textBoxFirstName1.Text.Trim() == string.Empty ||
-                textBoxLastname1.Text.Trim() == string.Empty ||
-                textBoxPhoneNo1.Text.Trim() == string.Empty ||
-                textBoxAddress1.Text.Trim() == string.Empty)
-                {
-                    MessageBox.Show("Please fill out all fields.", "Require all fields", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    DialogResult result = MessageBox.Show("Are You Want To Dlete This Client?", "Client Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (DialogResult.Yes == result)
-                    {
-                        check = db.DeleteClient(ID);
-
-                        if (check)
-                        {
-                            Clear1();
-                        }
-
-                    }
-
-                }
-
-            }
-        }
 
         private void tabPageUdateandDeleteClient_Leave(object sender, EventArgs e)
         {
