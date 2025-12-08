@@ -1,0 +1,325 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontrolclient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolclient.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\form\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\form\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolroom.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolroom.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontrolresevation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolresevation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontrolresevation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolresevation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\dbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\dbconnector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontroldashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontroldashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontroldashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontroldashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|c:\\users\\a\\desktop\\\u0627\u0644\u0641\u062C\u0631 8\\hotel-system-master\\hotel-system-main\\hotel_managment_system\\hospital_managment_system\\user control\\usercontrolsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\user control\\usercontrolsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\user control\\usercontrolsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\form\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\form\\formdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\form\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\form\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\hospital_managment_system\\form\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}|Hospital_Managment_System\\Hotel_Managment_System.csproj|solutionrelative:hospital_managment_system\\form\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControlRoom.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlRoom.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:42:04.186Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserControlRoom.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlRoom.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:00:06.699Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserControlClient.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.Designer.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlClient.Designer.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.Designer.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlClient.Designer.cs",
+              "ViewState": "AgIAAD0BAAAAAAAAAAAAAH8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T19:37:59.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserControlClient.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T04:20:19.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:25:55.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserControlClient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlClient.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlClient.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlClient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:15:54.696Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserControlRoom.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.Designer.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlRoom.Designer.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlRoom.Designer.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlRoom.Designer.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAADgv00BAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:32:40.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserControlResevation.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAUwFsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T23:41:30.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserControlResevation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlResevation.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlResevation.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlResevation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T23:41:26.166Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DbConnector.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\DbConnector.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\DbConnector.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\DbConnector.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\DbConnector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:11:46.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserControlDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T00:24:56.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserControlDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlDashboard.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlDashboard.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T00:24:53.865Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserControlSetting.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAQwLUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T00:07:16.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserControlSetting.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\User Control\\UserControlSetting.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\User Control\\UserControlSetting.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\User Control\\UserControlSetting.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T04:45:39.636Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\Form\\FormDashboard.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormDashboard.cs [Design]",
+              "RelativeToolTip": "Hospital_Managment_System\\Form\\FormDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T03:08:47.715Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAACgTAAAAAAAAAAASwDMTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-02T20:13:10.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormLogin.cs",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\Form\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormLogin.cs",
+              "RelativeToolTip": "Hospital_Managment_System\\Form\\FormLogin.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAqwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:23:00.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\a\\Desktop\\\u0627\u0644\u0641\u062C\u0631 8\\Hotel-System-master\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormLogin.cs",
+              "RelativeDocumentMoniker": "Hospital_Managment_System\\Form\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\a\\Desktop\\Hotel-System-main (1)\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormLogin.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Hotel-System-main (1)\\Hotel-System-main\\Hotel_Managment_System\\Hospital_Managment_System\\Form\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:18:49.04Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

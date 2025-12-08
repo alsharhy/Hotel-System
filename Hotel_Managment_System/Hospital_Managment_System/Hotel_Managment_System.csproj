@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E97ECD65-7159-4C7D-AAC2-9D775D7E4FA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hospital_Managment_System</RootNamespace>
+    <AssemblyName>Hospital_Managment_System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbConnector.cs" />
+    <Compile Include="Form\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlClient.Designer.cs">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlDashboard.Designer.cs">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlResevation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlResevation.Designer.cs">
+      <DependentUpon>UserControlResevation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlRoom.Designer.cs">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserControlSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserControlSetting.Designer.cs">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlClient.resx">
+      <DependentUpon>UserControlClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlDashboard.resx">
+      <DependentUpon>UserControlDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlResevation.resx">
+      <DependentUpon>UserControlResevation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlRoom.resx">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserControlSetting.resx">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762782978385.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17627878701371.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628010760442.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280107604411.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628011441634.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280114416311.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280114416321.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280114416331.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027116112.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280271161111.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027211691.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027473662.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280274736611.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027607882.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\176280276078811.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٠٩1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٢٨1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٤٨1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762787870137.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762799195647.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762801076044.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762801144163.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802711611 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802711611 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802711611.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802721169 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802721169.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802747366 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802747366.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1762802760788.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628010760441.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628011441631.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628011441632.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628011441633.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027116111.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027473661.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17628027607881.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٠٩.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٢٨.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_٢٠٢٥١١١٢_٢٢٤٥٤٨.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
